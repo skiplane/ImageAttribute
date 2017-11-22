@@ -8,7 +8,7 @@ import json
 def get_soup(url,header):
     return BeautifulSoup(urllib2.urlopen(urllib2.Request(url,headers=header)),'html.parser')
 
-def download_pics_by_query(num_images, query, save_directory='Pictures'):
+def download_pics_by_query(num_images, query, save_directory='Images'):
     image_type="ActiOn"
     query= query.split()
     query='+'.join(query)
